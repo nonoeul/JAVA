@@ -12,9 +12,12 @@ public class 라이브러리_Calender_3 {
 		Date date2=new Date(start);
 		System.out.println(sdf.format(date2));
 		
-		for (int i = 0; i < 100000000; i++)
+		for (int i = 0; i < 100; i++)
 		{
-			
+			try
+			{
+				Thread.sleep(10);
+			}catch(Exception ex) {}
 		}
 		long end=System.currentTimeMillis();
 		long result=end-start;
@@ -24,6 +27,7 @@ public class 라이브러리_Calender_3 {
 	public static void main(String[] args) {
 	
 		log();
+		
 		
 		
 	}

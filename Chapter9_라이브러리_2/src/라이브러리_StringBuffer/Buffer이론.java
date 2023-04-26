@@ -1,6 +1,7 @@
 package 라이브러리_StringBuffer;
 /*
  *	StrngBuffer
+
  *	-----------
  *	[1. String은 고정형 => 변경이 되면 새로운 메모리 생성
  *		1. 원본은 그대로 유지한다. 원본은 변하지 않는다. (변하지 않는 프로그램이다)  
@@ -30,6 +31,7 @@ package 라이브러리_StringBuffer;
  * 
  */
 import java.io.*;
+
 import java.net.*;
 // java.net패키지 = 내트워킹 응용 프로그램을 구현하기 위한 클래스제공 
 public class Buffer이론 {
@@ -49,7 +51,16 @@ public class Buffer이론 {
 				{
 					BufferedReader br=
 							new BufferedReader(
-									new InputStreamReader(conn.getInputStream(),"UTF-8"));
+/*					BufferedReader/BufferedWritter 버퍼를 이용해서 읽고 쓰는 함수
+					버퍼를 이용하기 때문에 입출력이 효율적으로 사용할 수 있다. 
+				버퍼를 이용한 입력 BufferedReader
+				버퍼를 이용한 출력 BufferedWriter
+		Scanner와 기능은 비슷한데 띄어쓰기, 엔터의 경계로 입력 값을 인식하기 때문에 가공할 필요가없어
+		쓰기가 매우 편리하다. 상대적으로 속도가 빠르다.				
+*/									
+									
+									
+										new InputStreamReader(conn.getInputStream(),"UTF-8"));
 											String msg=br.readLine();
 											if(msg==null) break;
 											sb.append(msg+"\n");

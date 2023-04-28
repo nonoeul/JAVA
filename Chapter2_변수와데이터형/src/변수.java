@@ -234,11 +234,7 @@ public class 변수 {
 		
 		int a1=10;
 		int b1=20;
-		int temp=a1;
-		a1=b1;
-		b1=temp;
-		System.out.println("a1:"+a1);
-		System.out.println("b1:"+b1);
+		
 		/*
 		 * int a=100;
 		 * a=200;	

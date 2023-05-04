@@ -1,23 +1,26 @@
 package com.sist.main6;
 class Super{
-	int a=20;
-	int b=30;
+	int a=10;
+	int b=20;
 }
-
 class Sub extends Super{
-	// Super의 a=20 ,b=30을 상속받은 상태이다. 
+	// int a, int b
+	int a=100;
+	int b=200;
 	public Sub()
 	{
-		System.out.println("a="+a+",b");
-		this.a=100;
-		this.b=200;
-		System.out.println("a="+a+",b");
-		System.out.println("a="+super.a+" b="+super.b);
+		System.out.println("a="+a+",b="+b);
+		this.a=1000;
+		this.b=2000;
+		System.out.println("a="+a+",b="+b);
+		System.out.println("a="+super.a+",b="+super.b);
 	}
 }
-
 public class MainClass {
+
 	public static void main(String[] args) {
-		Sub();
+		// TODO Auto-generated method stub
+        Sub sub=new Sub();
 	}
+
 }

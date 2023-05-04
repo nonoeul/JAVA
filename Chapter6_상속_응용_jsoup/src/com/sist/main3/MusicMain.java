@@ -15,10 +15,10 @@ public class MusicMain {
 		 * 		  ------------------
 		 * 
 		 */
-		GeniueMusicSystem ms=null; // 초기값 아무것도 넣지 않는 상태?
+		GenieMusicSystem ms=null; // 초기값 아무것도 넣지 않는 상태?
 		
 		if(select==1)
-			ms=new GeniueMusicSystem();
+			ms=new GenieMusicSystem();
 		else
 			ms=new MelonMusicSystem();
 		
